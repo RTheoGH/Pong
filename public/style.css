@@ -1,6 +1,66 @@
+body{
+    background-color: lightgray;
+}
+
 .menu{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+    border:none;
+    padding:40px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+}
+
+.jeux{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.jeu{
+    background-color: whitesmoke;
+    border:none;
+    border-radius:10px;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.jeu:hover {
+    transition: 0.4s;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.zoom{
+    transition: 1s;
+    height:75px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 20px;
+    padding:10px;
+    border:none;
+}
+
+.zoom:hover{
+    transition: 1s;
+    transform: scale(1.25);
+}
+
+.pad{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 150px;
+    height: 20px;
+    background: black;
 }
