@@ -14,6 +14,10 @@ app.get('/casse-brique',(req,res) => {
   res.sendFile("public/casse-brique.html",{root: __dirname});
 })
 
+app.get('/pong',(req,res) => {
+  res.sendFile("public/pong.html",{root: __dirname});
+})
+
 app.listen(port, () => {
   console.log(`On`)
 });
