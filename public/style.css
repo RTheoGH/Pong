@@ -2,6 +2,11 @@ body{
     background-color: lightgray;
 }
 
+#main{
+    width: 90vw;
+    height: 90vh;
+}
+
 .menu{
     position:absolute;
     top:50%;
