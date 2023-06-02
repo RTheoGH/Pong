@@ -13,15 +13,15 @@ function draw() {
     //     }
     // }
     const svg = d3.select("#main");
-    for(let i=0;i<30;i++){
+    for(let i=0;i<28;i++){
         for(let j=0;j<10;j++){
             svg.append('rect')
-            .attr('x', i*60)
+            .attr('x', i*62)
             .attr('y', j*35)
             .attr('width', 50)
             .attr('height', 25)
-            .attr('stroke', 'black')
-            .attr('fill', 'green');
+            .attr('stroke', 'white')
+            .attr('fill', 'whitesmoke');
         }
     }
     let x=800;
@@ -50,13 +50,15 @@ function draw() {
                 }
             }
         })
-
-    svg.append('circle')
-    .attr('r',10)
-    .attr('cx',700)
-    .attr('cy', 500)
-    .attr('stroke', 'black')
-    .attr('fill', 'white');
+    
+    let xb = 700;
+    let yb = 500;
+    let balle = svg.append('circle')
+        .attr('r', 10)
+        .attr('cx', xb)
+        .attr('cy', yb)
+        .attr('stroke', 'white')
+        .attr('fill', 'black');
 }
 
 draw()
